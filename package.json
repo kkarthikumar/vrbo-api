@@ -1,0 +1,41 @@
+{
+  "name": "vrbo-api",
+  "version": "1.0.0",
+  "description": "API to fetch hotels for vrbo for singapore",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "prod:start": "pm2 start ./bin/www",
+    "test": "mocha tests/*.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkarthikumar/vrbo-api.git"
+  },
+  "author": "Karthik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkarthikumar/vrbo-api/issues"
+  },
+  "homepage": "https://github.com/kkarthikumar/vrbo-api#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-sanitizer": "^1.0.5",
+    "express-validator": "^6.1.1",
+    "http-status": "^1.3.2",
+    "lodash": "^4.17.14",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "pm2": "^3.5.1"
+  }
+}
