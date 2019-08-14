@@ -1,4 +1,4 @@
-# holiday-hotel-booking-api
+# vrbo-api
 An API app to search hotels online
 
 ## Authors
@@ -30,13 +30,13 @@ Fire up with `npm start` to start thea server navigate to http://localhost:3000 
 ## Request
 
 ```
-http://18.219.86.136:3000/hotels?searchTerm=singapore&page=2&limit=20bedrooms=2&order=asc
+http://18.219.86.136:3000/hotels?searchValue=singapore
 
-searchTerm: string - For finding searchTerm (required)
-page: number - For pagination (optional) (default: 0)
-limit: number - For get results per page (default: 20)
-bedrooms: number - Handle bedrooms filter (optional)
-order: asc | desc - Handle sort order (optional)
+searchValue: string - For finding searchTerm (required)
+pageIndex: number - For pagination (optional) (default: 0)
+maxCount: number - For get results per page (default: 20)
+bedroomsCount: number - Handle bedrooms filter (optional)
+sortingOrder: asc | desc - Handle sort order (optional)
 
 ```
 
@@ -290,10 +290,10 @@ order: asc | desc - Handle sort order (optional)
 
 ```
 
-The app is running in EC2 instance. http://54.149.213.214:3000/. 
+The app is running in EC2 instance. http://18.219.86.136:3000/. 
 
 ## Bonus Points
 
-1. Application is deployed to cloud instances - http://54.149.213.214:3000/
+1. Application is deployed to cloud instances - http://18.219.86.136:3000/
 
 2. Proper error handling
